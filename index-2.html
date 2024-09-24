@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>B9A6 RETRO FORUM</title>
+    <!-- tailwind, daisiUI and others link  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- ----------------------------------------- -->
+  </head>
+  <body
+    class="f-mulish bg-white container mx-auto max-w-full lg:max-w-[1170px]"
+  >
+    <header class="mt-14">
+      <!-- Navbar  -->
+      <nav class="mb-14">
+        <div class="flex justify-between">
+          <div>
+            <img src="images/logo.png" alt="" />
+          </div>
+          <div class="hidden md:flex items-center gap-4">
+            <div class="tooltip" data-tip="Home">
+              <button
+                class="btn btn-circle bg-[#12132d08] border border-[#0307121a] rounded-full"
+              >
+                <img src="images/Frame.svg" alt="" />
+              </button>
+            </div>
+            <div class="tooltip" data-tip="Tooltip">
+              <button
+                class="btn btn-circle bg-[#12132d08] border border-[#0307121a] rounded-full"
+              >
+                <img src="images/Frame (1).svg" alt="" />
+              </button>
+            </div>
+            <div class="tooltip" data-tip="Add">
+              <button
+                class="btn btn-circle bg-[#12132d08] border border-[#0307121a] rounded-full"
+              >
+                <img src="images/Frame (2).svg" alt="" />
+              </button>
+            </div>
+            <div class="tooltip" data-tip="Flag">
+              <button
+                class="btn btn-circle bg-[#12132d08] border border-[#0307121a] rounded-full"
+              >
+                <img src="images/Frame (3).svg" alt="" />
+              </button>
+            </div>
+
+            <button class="btn bg-[#797DFC] px-10 py-4 rounded-[50px] ml-1">
+              Sign In
+            </button>
+          </div>
+
+          <!-- burger menu  -->
+          <div class="md:hidden flex items-center">
+            <button id="burger" class="text-black focus:outline-none">
+              <svg
+                class="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                ></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Mobile Navigation Menu  -->
+        <div id="mobile-menu" class="hidden md:hidden flex items-center gap-4">
+          <button
+            class="btn btn-circle bg-[#12132d08] border border-[#0307121a] rounded-full"
+          >
+            <img src="images/Frame.svg" alt="" /></button
+          ><button
+            class="btn btn-circle bg-[#12132d08] border border-[#0307121a] rounded-full"
+          >
+            <img src="images/Frame (1).svg" alt="" /></button
+          ><button
+            class="btn btn-circle bg-[#12132d08] border border-[#0307121a] rounded-full"
+          >
+            <img src="images/Frame (2).svg" alt="" /></button
+          ><button
+            class="btn btn-circle bg-[#12132d08] border border-[#0307121a] rounded-full"
+          >
+            <img src="images/Frame (3).svg" alt="" />
+          </button>
+          <button class="btn bg-[#797DFC] px-10 py-4 rounded-[50px] ml-1">
+            Sign In
+          </button>
+        </div>
+      </nav>
+      <!-- banner section  -->
+      <section
+        class="bg-[url('images/bgbanner.png')] bg-no-repeat bg-[#12132D] h-[550px] bg-bottom flex items-center justify-center rounded-[32px] p-4 sm:p-8"
+      >
+        <div class="flex flex-col lg:flex-row items-center gap-12 lg:gap-24">
+          <!-- Left Content -->
+          <div class="text-center lg:text-left">
+            <h1
+              class="text-white text-[32px] sm:text-[48px] lg:text-[64px] font-black leading-snug"
+            >
+              Welcome to the <br />
+              <span
+                class="bg-gradient-to-r from-[#797DFC] to-transparent text-transparent bg-clip-text"
+              >
+                ReTro
+              </span>
+              Forum
+            </h1>
+            <p
+              class="text-lg sm:text-xl text-[#ffffffcc] font-medium mb-8 mt-5"
+            >
+              Share your favorite opinion and win <br />
+              a WP Forum coffee mug!
+            </p>
+            <label
+              id="search-container"
+              class="flex items-center bg-white w-full sm:w-[400px] h-12 sm:h-14 rounded-[50px] justify-between px-4"
+            >
+              <input
+                id="search-input"
+                class="w-full text-[#03071280] text-base border-none focus:outline-none"
+                type="text"
+                placeholder="Search here anything"
+              />
+              <button
+                id="search-btn"
+                class="py-1 px-4 lg:py-2 relative left-3 rounded-[46px] bg-[#797DFC] text-white text-lg sm:text-xl font-bold"
+              >
+                Search
+              </button>
+            </label>
+          </div>
+
+          <!-- Right Content (Statistics Box) -->
+          <div
+            class="bg-white rounded-[32px] h-auto sm:h-[288px] w-full sm:w-[288px] p-6 sm:p-12"
+          >
+            <div class="flex flex-col gap-4">
+              <div
+                class="text-[#12132dcc] text-xl sm:text-2xl font-medium flex justify-between"
+              >
+                <h1>Registered Users</h1>
+                <p>01</p>
+              </div>
+              <div
+                class="text-[#12132dcc] text-xl sm:text-2xl font-medium flex justify-between"
+              >
+                <h1>Forum</h1>
+                <p>05</p>
+              </div>
+              <div
+                class="text-[#12132dcc] text-xl sm:text-2xl font-medium flex justify-between"
+              >
+                <h1>Topics</h1>
+                <p>01</p>
+              </div>
+              <div
+                class="text-[#12132dcc] text-xl sm:text-2xl font-medium flex justify-between"
+              >
+                <h1>Replies</h1>
+                <p>01</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </header>
+    <main>
+      <div id="spinner" style="display: none">
+        <img src="path-to-your-spinner.gif" alt="Loading..." />
+      </div>
+      <!-- Lets Us Discuss section  -->
+      <section class="mt-[100px] px-4">
+        <h3
+          class="text-[28px] sm:text-[40px] text-[#12132D] font-black text-center mb-6"
+        >
+          Let’s Discuss
+        </h3>
+        <p
+          class="text-base sm:text-lg text-[#12132d99] f-inter text-center mb-8 sm:mb-12"
+        >
+          Yes, you can run unit tests and view the results directly within the
+          <br />
+          app. The integrated testing features allow for a streamlined
+          experience.
+        </p>
+        <div class="flex flex-col lg:flex-row gap-6">
+          <!-- All Discusses -->
+          <div id="all-discusses-container" class=""></div>
+
+          <!-- Opend Discuss -->
+          <div
+            id="new-container"
+            class="w-full lg:w-[374px] h-auto rounded-3xl flex flex-col items-center p-4"
+          >
+            <div
+              class="flex gap-2 items-center justify-between mb-5 mt-2 p-3 rounded-2xl shadow-xl w-full"
+            >
+              <h1 class="text-lg sm:text-xl font-bold text-[#12132D]">Title</h1>
+              <div class="flex items-center gap-2">
+                <img src="images/Frame (4).svg" alt="" />
+                <h1 class="f-inter text-sm sm:text-base text-[#12132d99]">
+                  Mark as read
+                </h1>
+                <p
+                  id="clicked-count-display"
+                  class="f-inter text-sm sm:text-base text-[#12132d99]"
+                >
+                  0
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+    <script>
+      // Event Listener for Search Button
+      document
+        .getElementById("search-btn")
+        .addEventListener("click", handleSearch);
+
+      // Spinner Element
+      const spinner = document.getElementById("spinner");
+
+      // Fetch and Display All Discussions or Search Results from API
+      const showAlldiscuss = async (searchTerm = "") => {
+        // Show spinner while data is being fetched
+        spinner.style.display = "block";
+
+        // Determine the correct API endpoint based on search term
+        const apiUrl = searchTerm
+          ? `https://openapi.programming-hero.com/api/retro-forum/posts?category=${searchTerm}`
+          : "https://openapi.programming-hero.com/api/retro-forum/posts";
+
+        try {
+          const res = await fetch(apiUrl);
+          const data = await res.json();
+          const allDetails = data.posts;
+
+          // Display the fetched data and hide spinner
+          displayAllDetails(allDetails);
+        } catch (error) {
+          console.error("Error fetching data:", error);
+          document.getElementById("all-discusses-container").innerHTML =
+            "<p>Error loading data.</p>";
+        } finally {
+          // Hide the spinner after data is fetched
+          spinner.style.display = "none";
+        }
+      };
+
+      // Handle Search Function
+      function handleSearch() {
+        const searchTerm = document
+          .getElementById("search-input")
+          .value.trim()
+          .toLowerCase();
+
+        // Clear previous content
+        document.getElementById("all-discusses-container").innerHTML = "";
+
+        // Fetch and display the search result
+        showAlldiscuss(searchTerm);
+      }
+
+      // Function to Display All Discussions or Search Results
+      const displayAllDetails = (allDetails) => {
+        const allDetailsContainer = document.getElementById(
+          "all-discusses-container"
+        );
+        allDetailsContainer.innerHTML = ""; // Clear the container before adding new content
+
+        if (allDetails.length === 0) {
+          allDetailsContainer.innerHTML = "<p>No results found.</p>"; // Show message if no results
+          return;
+        }
+
+        allDetails.forEach((allDetail) => {
+          const singleDetails = document.createElement("div");
+          singleDetails.classList = `dynamic-container bg-[#797dfc1a] border border-[#797DFC] mb-6 flex flex-col lg:flex-row gap-6 h-auto lg:h-[270px] items-center justify-center rounded-3xl w-full lg:w-[772px] p-4`;
+
+          singleDetails.innerHTML = `
+      <div class="bottom-0 lg:bottom-[61px] inline-block relative">
+        <span class="absolute right-0 w-4 h-4 bg-green-500 border-2 border-white rounded-full" title="Online"></span>
+        <div class="w-[72px] h-[72px]"><img class="rounded-2xl" src="${allDetail?.image}" alt=""></div>
+      </div>
+      <div>
+        <div class="font-medium text-xs sm:text-sm text-[#12132dcc] f-inter flex flex-col lg:flex-row gap-2">
+          <p># ${allDetail?.category}</p>
+          <p>Author : ${allDetail?.author.name}</p>
+        </div>
+        <h1 class="font-bold text-[#12132D] text-lg sm:text-xl mt-3 mb-4 lg:mb-6">${allDetail?.title}</h1>
+        <p class="f-inter text-sm sm:text-base">${allDetail?.description}</p>
+        <hr class="my-4 sm:my-5 bg-[#12132d40] border-dashed w-full lg:w-[596px]" />
+        <div class="f-inter icons text-sm sm:text-base text-[#12132d99] flex justify-between">
+          <div class="flex gap-6 sm:gap-4 items-center">
+            <p class="flex gap-2"><img src="images/tabler-icon-message-2.svg" alt="" />${allDetail?.comment_count}</p>
+            <p class="flex gap-2"><img src="images/tabler-icon-eye.svg" alt="" />${allDetail?.view_count}</p>
+            <p class="flex gap-2"><img src="images/tabler-icon-clock-hour-9.svg" alt="" />${allDetail?.posted_time} min</p>
+          </div>
+          <div>
+            <button class="add-to-new-container text-white px-4 py-2 rounded-md">
+              <img src="images/email 1.svg" alt="email icon" />
+            </button>
+          </div>
+        </div>
+      </div>
+    `;
+
+          allDetailsContainer.appendChild(singleDetails);
+        });
+      };
+
+      // Initial load: show all discussions
+      showAlldiscuss();
+    </script>
+  </body>
+</html>
